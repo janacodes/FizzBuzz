@@ -1,5 +1,5 @@
 <?php
-for ($x = 1; $x <= 100; $x++) {
+function fizzBuzz($x) {
     if ($x % 3 == 0) {
         if ($x % 5 == 0) {
             echo "FizzBuzz" . "<br>";
@@ -15,4 +15,12 @@ for ($x = 1; $x <= 100; $x++) {
         echo $x . "<br>";
     }
 }
+
+
+for ($x = 1; $x <= 100; $x++) {
+    fizzBuzz($x);
+}
+
+fizzBuzz(5);
+fizzBuzz(-15);
 ?>

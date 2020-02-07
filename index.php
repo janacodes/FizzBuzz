@@ -17,10 +17,16 @@ function fizzBuzz($x) {
 }
 
 
-for ($x = 1; $x <= 100; $x++) {
-    fizzBuzz($x);
+for ($i = 1; $i <= 100; $i++) {
+    fizzBuzz($i);
 }
 
 fizzBuzz(5);
 fizzBuzz(-15);
+
+$numbersToCheck = [23, 27, 33, 35, 50];
+echo "NumbersToCheck hat ".count($numbersToCheck)." Zahlen <br>";
+foreach ($numbersToCheck as $number) {
+    fizzBuzz($number);
+}
 ?>
